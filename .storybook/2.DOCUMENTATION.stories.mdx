@@ -4,7 +4,7 @@ import { Meta } from '@storybook/addon-docs';
 
 # Documentation Guidelines
 
-> 💡 To improve the quality of our component documentation we are currently in the process of updating our storybook to use Storyboook's [controls](https://storybook.js.org/addons/@storybook/addon-controls/), [a11y](https://storybook.js.org/addons/@storybook/addon-a11y/) and [docs](https://storybook.js.org/addons/@storybook/addon-docs/) plugins. You will find most components currently without documentation and use [knobs](https://storybook.js.org/addons/@storybook/addon-knobs)(deprecated) for their primary interactivity. These will eventually be updated. Want to contribute? Check out the <a href="https://github.com/MetaMask/metamask-extension/issues?q=is%3Aopen+is%3Aissue+label%3Atype-story" targe="_blank">storybook issues on github</a>
+> 💡 To improve the quality of our component documentation we are currently in the process of updating our storybook to use Storybook's [controls](https://storybook.js.org/addons/@storybook/addon-controls/), [a11y](https://storybook.js.org/addons/@storybook/addon-a11y/) and [docs](https://storybook.js.org/addons/@storybook/addon-docs/) plugins. You will find most components currently without documentation and use [knobs](https://storybook.js.org/addons/@storybook/addon-knobs)(deprecated) for their primary interactivity. These will eventually be updated. Want to contribute? Check out the <a href="https://github.com/MetaMask/metamask-extension/issues?q=is%3Aopen+is%3Aissue+label%3Atype-story" targe="_blank">storybook issues on github</a>
 
 ## General Guidelines
 
@@ -56,7 +56,7 @@ import Button from '.';
 
 // The default storybook component export should always follow the same template
 export default {
-  // The `title` effects the components tile and location in storybook
+  // The `title` affects the components tile and location in the storybook
   // It should follow the folder structure location of the component. Don't use spaces.
   title: 'Components/UI/Button',
   component: Button, // The component you are documenting
@@ -65,11 +65,11 @@ export default {
       page: README, // Reference to the docs page MDX file
     },
   },
-  // the controls plugin argTypes are used for the interactivity of the component
+  //The controls plugin argTypes are used for the interactivity of the component
   argTypes: {
     children: { control: 'text' },
     disabled: { control: 'boolean' },
-    // use the updated action API to log actions in the actions tab
+    //Use the updated action API to log actions in the actions tab
     onClick: { action: 'clicked' },
     type: {
       control: {
@@ -186,9 +186,9 @@ By changing the `type` prop you can use different styles of the button.
 | type              | Description                                                                                           |
 | ----------------- | ----------------------------------------------------------------------------------------------------- |
 | `default`         | default style of the button                                                                           |
-| `primary`         | the principle call to action on the page                                                              |
+| `primary`         | the principal call to action on the page                                                              |
 | `secondary`       | secondary actions on each page                                                                        |
-| `warning`         | a warning action in the page                                                                          |
+| `warning`         | a warning action on the page                                                                          |
 | `danger`          | a negative action (such as Delete) on the page                                                        |
 | `danger--primary` | a negative principle call to action (such as Delete) on the page                                      |
 | `link`            | an optional action or navigation action out of the app changes root html tag from `<button>` to `<a>` |
